@@ -3,7 +3,6 @@ package fr.isen.mourgues.androiderestaurant
 import APIData
 import MenuSubItem
 import PreferencesManager
-import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
@@ -63,10 +62,8 @@ class MainActivity : ComponentActivity() {
     private val shopNumber = 2
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         setContent {
             val preferencesManager = PreferencesManager(LocalContext.current)
-            preferencesManager.saveData("panierQuantity", "0")
             AndroidERestaurantTheme {
                 Box(
                     modifier = Modifier
