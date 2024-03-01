@@ -6,7 +6,6 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.navigation.NavController
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -16,7 +15,6 @@ fun AlertDialog(
     dialogTitle: String,
     dialogText: String,
     icon: ImageVector,
-    navController: NavController,
 ) {
     androidx.compose.material3.AlertDialog(
         icon = {

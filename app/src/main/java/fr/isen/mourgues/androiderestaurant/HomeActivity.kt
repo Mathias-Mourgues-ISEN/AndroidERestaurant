@@ -104,7 +104,6 @@ class MainActivity : ComponentActivity() {
                                 }
                                 composable("recipe/{recipeId}") { backStackEntry ->
                                     backStackEntry.arguments?.getString("recipeId")
-                                    val preferencesManager = PreferencesManager(LocalContext.current)
                                     val recipe = preferencesManager.getData("item", "")
                                     val gson = GsonBuilder().create()
                                     val recipeItem = gson.fromJson(recipe, MenuSubItem::class.java)
