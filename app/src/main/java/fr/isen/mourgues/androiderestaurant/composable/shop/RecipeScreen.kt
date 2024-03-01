@@ -141,7 +141,6 @@ fun RecipeDetailScreen(recipe: MenuSubItem, navController: NavController) {
             dialogTitle = "Ajout au panier",
             dialogText = "Voulez-vous ajouter ${recipe.name_fr} x $quantity au panier ?",
             icon = Icons.Filled.ShoppingCart,
-            navController = navController
         )
     }
 }

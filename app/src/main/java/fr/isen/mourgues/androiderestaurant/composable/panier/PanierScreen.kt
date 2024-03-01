@@ -22,7 +22,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import androidx.navigation.compose.rememberNavController
 import fr.isen.mourgues.androiderestaurant.PanierManager
 import fr.isen.mourgues.androiderestaurant.Plat
 import fr.isen.mourgues.androiderestaurant.composable.NavigationBar.navigationData
@@ -85,7 +84,6 @@ fun CartItemCard(plat: Plat, navController: NavController) {
             dialogTitle = "Confirmation",
             dialogText = "Voulez-vous vraiment supprimer ${plat.nom} du panier ?",
             icon = Icons.Filled.ShoppingCart,
-            navController = rememberNavController()
         )
     }
 }
@@ -146,7 +144,6 @@ fun ShoppingCartScreen(navController: NavController) {
             dialogTitle = "Confirmation",
             dialogText = "Voulez-vous confirmer votre commande",
             icon = Icons.Filled.ShoppingCart,
-            navController = rememberNavController()
         )
     }
 }
